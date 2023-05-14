@@ -54,7 +54,8 @@ const Create = () => {
   const useJoin = useJoinMeeting();
 
   //const {setGlobalErrorMessage} = useContext(ErrorContext);
-  const {globalErrorMessage, setGlobalErrorMessage} = useContext(ErrorContext);
+  //const {globalErrorMessage, setGlobalErrorMessage} = useContext(ErrorContext);
+  const [errorMessage, setErrorMessage] = useState('');
   
   const history = useHistory();
   const [loading, setLoading] = useState(false);
@@ -133,6 +134,7 @@ const Create = () => {
       } catch (error) {
         setLoading(false);
         setGlobalErrorMessage(error);
+        setErrorMessage(error.message);
       }
     }
   };
@@ -148,7 +150,6 @@ const Create = () => {
         ) : (
           <ScrollView contentContainerStyle={style.main}>
             <Logo />
-            <Text>This is Dan.</Text>
             <View style={style.content}>
               <View style={style.leftContent}>
                 <Text style={style.heading}>{$config.APP_NAME}</Text>
@@ -166,7 +167,7 @@ const Create = () => {
                     }
                     placeholder={meetingNameInputPlaceholder}
                   />
-                  {globalErrorMessage && <Text style={style.errorText}>{globalErrorMessage}</Text>}
+                  {errorMessage && <Text style={style.errorText}>{errorMessage}</Text>}
                   <View style={{paddingVertical: 10}}>
                     {/* previous code... */}
                   </View>
