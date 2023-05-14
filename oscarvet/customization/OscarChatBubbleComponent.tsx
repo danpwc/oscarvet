@@ -6,7 +6,7 @@ const ChatBubbleComponent = (props) => {
   const { uid, isLocal } = props;
 
   // Get data from render app-state
-  const { renderList } = useRender();
+  const { renderList } = useRender();   
 
   // Fetch username using uid
   const displayName = renderList[uid].name;
