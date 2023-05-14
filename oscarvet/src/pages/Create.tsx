@@ -165,6 +165,7 @@ const Create = () => {
                     }
                     placeholder={meetingNameInputPlaceholder}
                   />
+                  <pre> error message here </pre>
                   {globalErrorMessage && <Text style={style.errorText}>{globalErrorMessage}</Text>}
                   <View style={{paddingVertical: 10}}>
                     {/* previous code... */}
