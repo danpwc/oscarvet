@@ -1,6 +1,6 @@
 import { customize } from "customization-api";
 
-import OscarChatBubbleComponent from "./OscarChatBubbleComponent";
+import OscarChatBubbleComponent from "./components/OscarChatBubbleComponent";
 
 const userCustomization = customize({
   components: {
