@@ -144,7 +144,7 @@ const Create = () => {
       }}>
       {!roomCreated ? (
         CreateComponent ? (
-          <CreateComponent />
+          <CreateComponent /> 
         ) : (
           <ScrollView contentContainerStyle={style.main}>
             <Logo />
