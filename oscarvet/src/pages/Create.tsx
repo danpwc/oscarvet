@@ -148,6 +148,7 @@ const Create = () => {
         ) : (
           <ScrollView contentContainerStyle={style.main}>
             <Logo />
+            <Text>This is Dan.</Text>
             <View style={style.content}>
               <View style={style.leftContent}>
                 <Text style={style.heading}>{$config.APP_NAME}</Text>
@@ -165,7 +166,6 @@ const Create = () => {
                     }
                     placeholder={meetingNameInputPlaceholder}
                   />
-                  <pre> error message here </pre>
                   {globalErrorMessage && <Text style={style.errorText}>{globalErrorMessage}</Text>}
                   <View style={{paddingVertical: 10}}>
                     {/* previous code... */}
