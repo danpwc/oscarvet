@@ -2,7 +2,7 @@ import { ChatBubble, useRender, $config } from "customization-api";
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-const ChatBubbleComponent = (props) => {
+const ChatBubbleComponent = (props) => {   
   const { uid, isLocal } = props;
 
   // Get data from render app-state
