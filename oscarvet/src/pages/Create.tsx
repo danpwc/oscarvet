@@ -170,7 +170,7 @@ const Create = () => {
                       )
                     }
                     placeholder={meetingNameInputPlaceholder}
-                  />
+                  /> 
                   {errorMessage && <Text>{errorMessage}</Text>}
                   <View style={{paddingVertical: 10}}>
                     <View style={style.checkboxHolder}>
